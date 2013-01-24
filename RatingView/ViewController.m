@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RateView.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.ratingView.rating = 0;
+    self.ratingView.editable = YES;
+    self.ratingView.delegate = self;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +31,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setRatingView:nil];
+    [super viewDidUnload];
+}
+
+- (void)rateView:(RateView *)rateView RatingDidChanged:(float)rating
+{
+    NSLog(@"Rating: %f", rating);
+}
 @end

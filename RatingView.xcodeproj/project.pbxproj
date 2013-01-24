@@ -18,6 +18,10 @@
 		3656946616B1659600AF0820 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3656946516B1659600AF0820 /* Default-568h@2x.png */; };
 		3656946916B1659600AF0820 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3656946716B1659600AF0820 /* MainStoryboard.storyboard */; };
 		3656946C16B1659600AF0820 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3656946B16B1659600AF0820 /* ViewController.m */; };
+		3656948016B16A9300AF0820 /* fullSelected.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3656947B16B16A9200AF0820 /* fullSelected.gif */; };
+		3656948116B16A9300AF0820 /* halfSelected.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3656947C16B16A9200AF0820 /* halfSelected.gif */; };
+		3656948216B16A9300AF0820 /* notSelected.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3656947D16B16A9200AF0820 /* notSelected.gif */; };
+		3656948316B16A9300AF0820 /* RateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3656947F16B16A9200AF0820 /* RateView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,11 @@
 		3656946816B1659600AF0820 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3656946A16B1659600AF0820 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3656946B16B1659600AF0820 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3656947B16B16A9200AF0820 /* fullSelected.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fullSelected.gif; sourceTree = "<group>"; };
+		3656947C16B16A9200AF0820 /* halfSelected.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = halfSelected.gif; sourceTree = "<group>"; };
+		3656947D16B16A9200AF0820 /* notSelected.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = notSelected.gif; sourceTree = "<group>"; };
+		3656947E16B16A9200AF0820 /* RateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateView.h; sourceTree = "<group>"; };
+		3656947F16B16A9200AF0820 /* RateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,11 @@
 		3656945516B1659600AF0820 /* RatingView */ = {
 			isa = PBXGroup;
 			children = (
+				3656947B16B16A9200AF0820 /* fullSelected.gif */,
+				3656947C16B16A9200AF0820 /* halfSelected.gif */,
+				3656947D16B16A9200AF0820 /* notSelected.gif */,
+				3656947E16B16A9200AF0820 /* RateView.h */,
+				3656947F16B16A9200AF0820 /* RateView.m */,
 				3656945E16B1659600AF0820 /* AppDelegate.h */,
 				3656945F16B1659600AF0820 /* AppDelegate.m */,
 				3656946716B1659600AF0820 /* MainStoryboard.storyboard */,
@@ -163,6 +177,9 @@
 				3656946416B1659600AF0820 /* Default@2x.png in Resources */,
 				3656946616B1659600AF0820 /* Default-568h@2x.png in Resources */,
 				3656946916B1659600AF0820 /* MainStoryboard.storyboard in Resources */,
+				3656948016B16A9300AF0820 /* fullSelected.gif in Resources */,
+				3656948116B16A9300AF0820 /* halfSelected.gif in Resources */,
+				3656948216B16A9300AF0820 /* notSelected.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +193,7 @@
 				3656945C16B1659600AF0820 /* main.m in Sources */,
 				3656946016B1659600AF0820 /* AppDelegate.m in Sources */,
 				3656946C16B1659600AF0820 /* ViewController.m in Sources */,
+				3656948316B16A9300AF0820 /* RateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +275,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RatingView/RatingView-Prefix.pch";
 				INFOPLIST_FILE = "RatingView/RatingView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,6 +287,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RatingView/RatingView-Prefix.pch";
 				INFOPLIST_FILE = "RatingView/RatingView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -292,6 +312,7 @@
 				3656947116B1659600AF0820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

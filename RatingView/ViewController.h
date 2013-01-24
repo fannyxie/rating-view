@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RateView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<RateViewDelegate>
+
+@property (weak, nonatomic) IBOutlet RateView *ratingView;
 
 @end
