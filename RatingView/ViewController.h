@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController<RateViewDelegate>
 
-@property (weak, nonatomic) IBOutlet RateView *ratingView;
+@property (weak, nonatomic) IBOutlet RateView *editableRatingView;
+@property (weak, nonatomic) IBOutlet RateView *readonlyRatingView;
 
 @end

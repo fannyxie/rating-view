@@ -19,9 +19,12 @@
 {
     [super viewDidLoad];
     
-    self.ratingView.rating = 0;
-    self.ratingView.editable = YES;
-    self.ratingView.delegate = self;
+    self.editableRatingView.rating = 0;
+    self.editableRatingView.editable = YES;
+    self.editableRatingView.delegate = self;
+    
+    self.readonlyRatingView.rating = 3.5;
+    self.readonlyRatingView.editable = NO;
 
 }
 
@@ -32,7 +35,7 @@
 }
 
 - (void)viewDidUnload {
-    [self setRatingView:nil];
+    [self setEditableRatingView:nil];
     [super viewDidUnload];
 }
 
